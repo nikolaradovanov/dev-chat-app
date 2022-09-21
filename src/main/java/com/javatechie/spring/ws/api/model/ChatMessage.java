@@ -1,6 +1,11 @@
 package com.javatechie.spring.ws.api.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 public class ChatMessage {
+
+	private Long id;
 	private String content;
 	private String sender;
 	private MessageType type;
@@ -18,6 +23,13 @@ public class ChatMessage {
 		this.dateTime = dateTime;
 	}
 
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public String getContent() {
 		return content;
